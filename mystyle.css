@@ -1,0 +1,254 @@
+/*this is my final exam CSS file*/
+
+/*---------------- style the BODY element ---------------------------------------*/
+body {
+     background-color:white; 
+     margin: 0;
+     padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+h1 {
+  font-family: Helvetica;
+  color: black;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+.div_base {
+  background-color: #accae2; 
+  border: 1px solid black;
+
+  width: 90%;
+  height: 210px;
+
+  font-family: Helvetica;
+  color: black;
+
+  margin: 0 5% 0 5%;
+  overflow: hidden;
+}
+
+.div1 {
+  /* large media devices*/
+  @media (min-width: 992px) {
+    margin-right: 2.5%;
+    margin-left: 7.5%;
+  }
+  /*medium media devices*/
+  @media (min-width: 768px) and (max-width: 991px) {
+    margin-right: 3.3% ;
+    margin-left: 6.7%;
+  }
+}
+
+.div2 {
+  /* large media devices*/
+  @media (min-width: 992px) {
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  /*medium media devices*/
+  @media (min-width: 768px) and (max-width: 991px) {
+    margin-right: 6.7%;
+    margin-left: 3.3%;
+  }
+}
+
+.div3 {
+  /* large media devices*/
+  @media (min-width: 992px) {
+    margin-right: 7.5%;
+    margin-left: 2.5%;
+  }
+  /*medium media devices*/
+  @media (min-width: 768px) and (max-width: 991px) {
+    width: 93.5%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.head_base {
+  font-family: Helvetica;
+  color: black;
+  margin: 0;
+  
+  height: auto;
+  width: 120px;
+  border: 1px solid black;
+    
+  float: right;
+  text-align: center;
+}
+
+.head1 {
+  background-color: #e05a5a;
+}
+
+.head2 {
+  background-color: #b33f0a;
+  color: white;
+}
+
+.head3 {
+  background-color: #14975a;
+}
+
+
+.p_text1, .p_text2, .p_text3 {
+  position: relative;
+  top: 20px;
+  left: 0;
+
+  padding: 15px;
+}
+
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+    /*border: 1px solid green;*/
+    margin-bottom: 3.5%;
+  }
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+    /*border: 1px solid green;*/
+    margin-bottom: 3.5%;
+  }
+  .col-md-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 74.99%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+/********** Small devices only **********/
+@media (max-width: 767px) {
+  .col-sd-1, .col-sd-2, .col-sd-3, .col-sd-4, .col-sd-5, .col-sd-6, .col-sd-7, .col-sd-8, .col-sd-9, .col-sd-10, .col-sd-11, .col-sd-12 {
+    float: left;
+    /*border: 1px solid green;*/
+    margin-bottom: 3.5%;
+  }
+  .col-sd-1 {
+    width: 8.33%;
+  }
+  .col-sd-2 {
+    width: 16.66%;
+  }
+  .col-sd-3 {
+    width: 25%;
+  }
+  .col-sd-4 {
+    width: 33.33%;
+  }
+  .col-sd-5 {
+    width: 41.66%;
+  }
+  .col-sd-6 {
+    width: 50%;
+  }
+  .col-sd-7 {
+    width: 58.33%;
+  }
+  .col-sd-8 {
+    width: 66.66%;
+  }
+  .col-sd-9 {
+    width: 74.99%;
+  }
+  .col-sd-10 {
+    width: 83.33%;
+  }
+  .col-sd-11 {
+    width: 91.66%;
+  }
+  .col-sd-12 {
+    width: 100%;
+  }
+}
+
+
